@@ -6,7 +6,7 @@ import MacContainer from "./MacContainer";
 const App = () => {
   return(
     <div className="w-full h-screen font-['Helvatica_Now_Display']">
-      <div className="navbar flex gap-5 py-10 absolute top-0 left-1/2 -translate-x-1/2">
+      <div className="navbar line flex gap-5 pt-10 pb-3 absolute top-0 left-1/2 -translate-x-1/2">
         {[
           "iPad",
           "iPhone",
