@@ -11,7 +11,6 @@ const MacContainer = () => {
     meshes[e.name] = e;
   });
 
-  // Initialize the mesh properties
   meshes.screen.rotation.x = THREE.MathUtils.degToRad(180);
   meshes.matte.material.map = tex;
   meshes.matte.material.emissiveIntensity = 0;
@@ -21,7 +20,6 @@ const MacContainer = () => {
   const data = useScroll();
 
   useFrame(() => {
-    // Update rotation based on scroll offset
     meshes.screen.rotation.x = THREE.MathUtils.degToRad(180 - data.offset * 90);
   });
 
